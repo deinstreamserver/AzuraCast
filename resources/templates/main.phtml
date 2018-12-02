@@ -134,8 +134,8 @@ echo $assets->js();
 </section>
 
 <footer id="footer" <?php if (empty($sidebar)): ?>class="footer-alt"<?php endif; ?> role="contentinfo">
-    <?=__('Powered by %s', '<a href="https://www.azuracast.com/" target="_blank">'.$settings['name'].'</a> &bull; '.$version->getVersionText().' &bull; '.(APP_INSIDE_DOCKER ? 'Docker' : 'Traditional').' &bull; PHP '.\PHP_MAJOR_VERSION.'.'.\PHP_MINOR_VERSION) ?><br>
-    <?=__('Like our software? <a href="%s" target="_blank">Donate to support AzuraCast!</a>', 'https://www.azuracast.com/donate.html') ?>
+    <b>Dein</b>Streamserver Dedicated Streaming Interface. <br>Powered by <a href="https://azuracast.com/" target="_blank">AzuraCast</a> <?php echo $version->getVersionText() ?><br>
+   
 </footer>
 
 <div id="radio-player"></div>
