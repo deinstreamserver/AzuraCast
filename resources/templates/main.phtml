@@ -21,7 +21,7 @@ $user = $request->getUser();
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title><?=$customization->getPageTitle($title) ?></title>
+<title>DeinStreamserver - Panel</title>
 
 <?=$this->fetch('partials/icons') ?>
 
@@ -48,7 +48,7 @@ echo $assets->js();
 <?php endif; ?>
 
     <a class="navbar-brand ml-0 mr-auto" href="<?=$router->named('dashboard') ?>">
-        azura<strong>cast</strong> <?php if (!empty($customization->getInstanceName())): ?><small><?=$this->e($customization->getInstanceName()) ?></small><?php endif; ?>
+        <strong>Dein</strong>Streamserver <?php if (!empty($customization->getInstanceName())): ?><small><?=$this->e($customization->getInstanceName()) ?></small><?php endif; ?>
     </a>
 
     <?=$this->fetch('partials/radio_controls') ?>
