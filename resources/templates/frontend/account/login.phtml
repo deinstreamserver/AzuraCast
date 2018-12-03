@@ -8,19 +8,16 @@ $this->layout('minimal', [
 <div class="public-page">
     <div class="card">
         <div class="card-body">
-            <h2 class="card-title mb-0">
-            <?php if ($customization->hideProductName()): ?>
-                <?=__('Welcome!') ?>
-            <?php else: ?>
-                <?=sprintf(__('Welcome to %s!'), $settings['name']) ?>
-            <?php endif; ?>
+           <h2 class="card-title mb-0">
+            <strong>Dein</strong>Streamserver
             <?php if (!empty($customization->getInstanceName())): ?>
                 <small class="text-muted"><?=$this->e($customization->getInstanceName()) ?></small>
             <?php endif; ?>
             </h2>
 
-            <p class="text-left"><?=__('Please log in to continue.') ?> <?=sprintf(__('<a href="%s" target="_blank">Forgot your password?</a>'), 'https://github.com/AzuraCast/AzuraCast/blob/master/SUPPORT.md#reset-an-account-password') ?></p>
+            <p class="text-left">Streaming Panel Login</p>
 
+            
             <form id="login-form" class="pr-5" action="" method="post">
                 <div class="input-group">
                     <div class="floating-label">
